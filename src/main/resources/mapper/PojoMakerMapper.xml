@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ifast.maker.dao.MakerDao">
+    <cache type="com.ifast.maker.redis.RedisCache"/>
+    <resultMap id="MakerMapperResult" type="com.ifast.maker.pojo.Maker">
+        <id column="maker_id" property="id"/>
+        <result column="maker_name" property="name"/>
+        <result column="maker_address" property="address"/>
+    </resultMap>
+
+    <select id="getMakers" resultMap="MakerMapperResult">
+        SELECT * from maker;
+    </select>
+</mapper>
