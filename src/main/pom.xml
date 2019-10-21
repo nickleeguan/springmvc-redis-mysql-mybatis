@@ -10,7 +10,7 @@
 
 
   <properties>
-    <jackson.version>2.5.4</jackson.version>
+    <jackson.version>2.10.0</jackson.version>
     <mybatis.version>3.2.8</mybatis.version>
     <mybatisspring.version>1.2.1</mybatisspring.version>
   </properties>
